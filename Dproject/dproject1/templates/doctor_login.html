@@ -1,0 +1,71 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Login Form</title>
+            <link rel ="stylesheet" href="{% static 'loginstyle.css' %}">
+</head>
+
+<body>
+      <header>
+            <div class="container3">
+                  <a href="home1">
+                <img src="{% static 'logo.ico' %}" id="logo1">
+            </a><br>
+                <h1 id="black1">----</h1>
+                <h1>Get Cured</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home1">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signup1">User Signup</a></li>
+                        <li><a href="admin_login">Admin Signup or Login</a></li>
+                        <li><a href="doctor_login">DOCTOR LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+      <div class="body1">
+
+      <div class="main">
+            <h1 style="text-decoration:underline;">Doctor  LOGIN</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="doctor_log">
+                <label for="first">
+                        Doctor Name:
+                </label>
+                <input type="text"
+                        id="first"
+                        name="first"
+                        placeholder="Enter your Name" required>
+
+
+                <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password"
+                         name="password"
+                         placeholder="Enter your Password" required>
+
+                  <div class="wrap">
+                        <button type="submit">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <!--<p>Not registered?
+                  <a href="#"
+                     style="text-decoration: none;">
+                     <a href="signup1
+                      ">Create an account</a>
+                  </a>
+            </p>-->
+      </div>
+</div>
+</body>
+
+</html>

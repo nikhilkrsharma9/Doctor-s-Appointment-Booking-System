@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={% static 'about.css' %}>
+	<title>About Us</title>
+</head>
+
+<body>
+
+
+	<header>
+        <div class="container3">
+            <a href="home1">
+            <img src="{% static 'logo.ico' %}" alt="home1.html" id="logo1"></a><br>
+            <h1 id="black1">----</h1>
+            <h1>Get Cured</h1>
+            <nav>
+                <ul>
+                    <li><a href="home1">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login">User Login</a></li>
+                    <li><a href="signup1">User Signup</a></li>
+                    <li><a href="admin_login">Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<section class="about">
+		<h1>About Us</h1>
+		<p style="font-weight: bold">
+            Enjoy Your Life — We’ll Be Here to Save it...
+		</p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src="{% static 'logo.ico' %}"alt="DABS" style="width:100%">
+			</div>
+			<div>
+			<p> Get Cured is a transformative healthcare platform catering to hospitals, independent doctors, and patients. Simplifying patient care, it offers virtual consultations, effortless health record management, and real-time monitoring. The platform enables secure online appointments, connecting patients with doctors and specialists through video and audio calls. Doccure swiftly digitizes medical records, seamlessly transitioning to the digital realm.
+			</p>
+				<button>Read More...</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<h1>Meet Our Team</h1>
+		<div class="team-cards">
+		
+			<!-- Cards here -->
+			<!-- Card 1 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="{% static 'Prabhat.jpg' %}"  alt="User 1">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Dr. Ranjan</h2>
+					<p class="card-role">Psychiatrist</p>
+					<p class="card-email">ranjanprabhat.c@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="{% static 'Mozakkir.jpg' %}"  alt="User 2">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Dr. Khan</h2>
+					<p class="card-role">Cardiologist</p>
+					<p class="card-email">mozakkirk4@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		
+			<!-- Card 3 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="{% static 'Nikhil.jpg' %}"  alt="User 3">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Dr. Sharma</h2>
+					<p class="card-role">Orthologist</p>
+					<p class="card-email">nikhilkumar09012002@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+            <!-- Card 4 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="{% static 'Priyanka.jpg' %}"  alt="User 4">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Dr. Prasad</h2>
+					<p class="card-role">Neurologist</p>
+					<p class="card-email">priyankakumari3269@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+            <!-- Card 5 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="{% static 'Priti.jpg' %}"  alt="User 5">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Dr. Kumari</h2>
+					<p class="card-role">General Physician</p>
+					<p class="card-email">priyankakumari3269@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>© 2023 DABS. All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>

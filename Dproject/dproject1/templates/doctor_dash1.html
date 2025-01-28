@@ -1,0 +1,57 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Appointment System</title>
+    <link rel="stylesheet" href="{% static 'admin_dash.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="doc_page">
+            <img src="{% static 'logo.ico' %}" alt="admin_page.html" id="logo1"></a><br>
+            <h1 id="black1">----</h1>
+            <h1>Get Cured</h1>
+            <nav>
+                <ul>
+                    <li><a href="doc_page">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="home1">SIGNOUT</a></li>
+                    
+                   
+                </ul>
+                
+               
+            
+            </nav>
+        </div>
+    </header>
+    <center>
+        <div class="tab">
+        <table border = solid  >
+            <tr>
+                <td>Doctor Name</td>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Reason</td>
+                <td>Patient name</td>
+                
+            </tr>
+        </div>
+           
+            <tr>
+                <td>{{n.option_doctor}}</td>
+                <td>{{n.date}}</td>
+                <td>{{n.time}}</td>
+                <td>{{n.reason}}</td>
+                <td>{{n.name}}</td>
+              </tr>
+           
+        </table>
+    </center>
+    </body>
+    </html>

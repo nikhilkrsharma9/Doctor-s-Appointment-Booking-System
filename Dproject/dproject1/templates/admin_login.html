@@ -1,0 +1,65 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Login Form</title>
+            <link rel ="stylesheet" href="{% static 'loginstyle.css' %}">
+</head>
+
+<body>
+      <header>
+            <div class="container3">
+                  <a href="home1">
+                <img src="{% static 'logo.ico' %}" id="logo1">
+            </a><br>
+                <h1 id="black1">----</h1>
+                <h1>Get Cured</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home1">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login">User Login</a></li>
+                        <li><a href="signup1">User Signup</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+      <div class="body1">
+
+      <div class="main">
+            <h1 style="text-decoration:underline;">ADMIN LOGIN</h1>
+            <h3 style="text-decoration:underline;">Enter Admin Details</h3>
+            <form action="admin_log">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="first" 
+                         placeholder="Enter your Username" required>
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Enter your Password" required>
+
+                  <div class="wrap">
+                        <button type="submit">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+          
+            </p>
+      </div>
+</div>
+</body>
+
+</html>
