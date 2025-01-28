@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <form action="../dashedit/{{u1.id}}">
+            <label for="doctor">Choose Doctor:</label>
+            <select id="a1" name="a1" required>
+                <option value="">Select Doctor</option>
+                <option value="Dr. Priyanka">Dr. Priyanka</option>
+                <option value="Dr. Prabhat">Dr. Prabhat</option>
+                <option value="Dr. Nikhil">Dr. Nikhil</option>
+                <option value="Dr. Prit">Dr. prit</option>
+                <option value="Dr. Mozakkir">Dr. Mozakkir</option>
+            </select>
+            <input type="date" id="date" name="a2" value="{{u1.date}}">
+            <label for="time">Appointment Time:</label>
+            <select id="time" id="time" name="a3" required>
+                <option value="">Select Your Slot</option>
+                <option value="10:00A.M-11:00A.M">1st Slot(10:00A.M-11:00A.M)</option>
+                <option value="11:00A.M-12:00P.M">2nd Slot(11:00A.M-12:00P.M)</option>
+                <option value="12:00P.M-01:00P.M">3rd Slot(12:00P.M-01:00P.M)</option>
+                <option value="02:00P.M-03:00P.M">4th Slot(02:00P.M-03:00P.)</option>
+                <option value="03:00P.M-04:00P.M">5th Slot(03:00P.M-04:00P.M)</option>
+            </select>
+            <input type="text" name="a4" value="{{u1.reason}}">
+            <input type="text" name="a5" value="{{u1.name}}">
+            <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Account Page</title>
+<link rel="stylesheet" href="{% static 'user_account.css'%}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="after_login">
+            <img src="{% static 'logo.ico' %}" alt="home1.html" id="logo1"></a><br>
+            <h1 id="black1">----</h1>
+
+            <h1><a href="after_login" id="a1">Get Cured</a></h1>
+            <nav>
+                <ul>
+                 <!--   <li><a href="user_account"><i class="fa-solid fa-user-tie"></i> ACCOUNT</a></li>-->
+                    <li><a href="after_login"><i class="fa-solid fa-house-user"></i> HOME</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="home1">SignOut</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container1">
+        <h1>YOUR ACCOUNT</h1>
+
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>User ID:-</th>
+                    <td>{{user.id}}</td>
+                </tr>
+                <tr>
+                    <th>Username:-</th>
+                    <td>{{user.username}}</td>
+                </tr>
+                <tr>
+                    <th>Full Name:-</th>
+                    <td>{{user.name}}</td>
+                </tr>
+                <tr>
+                    <th>E-mail:-</th>
+                    <td>{{user.email}}</td>
+                </tr>
+                <tr>
+                    <th>D.O.B:-</th>
+                    <td>{{user.dob}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+       
+        <div class="button-container">
+            <button class="button">Edit Account</button>
+        </div>
+    </div>
+</body>
+</html>

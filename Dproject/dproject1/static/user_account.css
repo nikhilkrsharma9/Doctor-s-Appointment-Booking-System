@@ -1,0 +1,102 @@
+
+.container {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: inline;
+    
+}
+
+
+#black1{
+        color: black;
+}
+#logo1{
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        float: left;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #77ffb9 3px solid;
+    height: 100px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header a:hover{
+    color: #18d373;
+}
+#a1{
+    font-size: 34px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 0px;
+}
+.fa-user-tie{
+    font-size: 24px;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 120px;
+}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container1 {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        text-decoration: underline;
+    }
+    .button-container {
+        text-align: center;
+    }
+    .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #0056b3;
+    }
+th{
+    text-align: left;
+}

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+
+#black1{
+        color: black;
+}
+#logo1{
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        float: left;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #77ffb9 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.hero-section {
+    background-image: url(doctorappoint3.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #555;
+    transition-delay: 3ms;
+}
+
+
+
+.dash{
+    background-color: rgb(195, 161, 118);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    border-radius: 50px;
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+    transition: ease-in;
+    transition-duration: 0.5s;
+    background-color: rgb(177, 236, 236);
+}
+.button:hover{
+        height: 150px;
+        width: 150px;
+        font-size: 23px;
+        background-color: blueviolet;
+}

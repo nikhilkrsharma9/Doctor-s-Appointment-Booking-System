@@ -1,0 +1,94 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel ="stylesheet" href="{% static 'signup1.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="nav1">
+        <div class="container3">
+          <a href="home1">
+            <img src="{% static 'logo.ico' %}" id="logo1">
+          </a><br>
+            <h1 id="black1">----</h1>
+            <h1><a href="home1">Get Cured</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="home1">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login">User Login</a></li>
+                    <li><a href="signup1">User Signup</a></li>
+                    <li><a href="admin_login">Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="body1">
+
+    
+   <!-- Container for the registration form -->
+  <div class="container">
+    <!-- Title of the form -->
+    <div class="title">Create new account</div>
+    <hr>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="sign">
+        <div class="user-details">
+          <!-- Input box for full name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <!-- Input box for username -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="username" placeholder="Enter your username" required>
+          </div>
+          <!-- Input box for email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <!-- Input box for password -->
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="pwd" placeholder="Enter your password" required>
+          </div>
+          <!-- Input box for confirming password -->
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" name="repwd" placeholder="Confirm your password" required>
+          </div>
+          <!-- Input box for date of birth -->
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="date" name="dob" required>
+          </div>
+        </div>
+        <!-- Button gender -->
+        <p>select your gender:</p>
+  <input type="radio" id="male1" name="chose1">
+  <label for="Male">Male</label>
+  <input type="radio" id="female1" name="chose1">
+  <label for="female1">Female</label>
+  <input type="radio" id="other1" name="chose1">
+  <label for="other1">Other</label>
+        <!-- Button container -->
+        <div class="button-container">
+          <div class="button">
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

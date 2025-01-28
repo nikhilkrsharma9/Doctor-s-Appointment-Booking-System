@@ -1,0 +1,67 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Appointment System</title>
+    <link rel="stylesheet" href="{% static 'styles1.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home1">
+            <img src="{% static 'logo.ico' %}" alt="home1.html" id="logo1"></a><br>
+            <h1 id="black1">----</h1>
+            <h1>Get Cured</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login">User Login</a></li>
+                    <li><a href="signup1">User Signup</a></li>
+                    <li><a href="admin_login">Admin Login</a></li>
+                    <li><a href="doctor_login">DOCTOR LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to Our Appointment System</h2>
+            <p>Book an appointment with the best doctors in town</p>
+            <a href="login" class="btn">Login for BOOK APPOINTMENT</a>
+            
+            <a href="admin_login" class="btn">Admin Login</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide the best healthcare services with a team of experienced doctors.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>General Check-up</h3>
+                <p>Comprehensive health check-ups and diagnostics.</p>
+            </div>
+            <div class="service">
+                <h3>Specialist Consultation</h3>
+                <p>Consult with specialist doctors in various fields.</p>
+            </div>
+            <div class="service">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency care services.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
